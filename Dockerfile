@@ -4,7 +4,7 @@ ARG DEBIAN_FRONTEND=noninteractive
 USER root
 
 RUN apt update
-RUN apt install -y tzdata git curl wget bash unzip jq gawk software-properties-common python3 python3-pip
+RUN apt install -y tzdata git curl wget bash unzip jq gawk software-properties-common python3 python3-pip sshpass
 RUN pip install 'ansible==9.2.0'
 RUN pip install 'ansible-core==2.16.3'
 
